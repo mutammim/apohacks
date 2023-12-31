@@ -12,18 +12,21 @@
 
   <!-- -------------------------------- Main --------------------------------- -->
 
-  <div class="mx-auto flex flex-wrap justify-center gap-6 p-6">
-    <div class="flex basis-[36rem] flex-col">
+  <div class="mx-auto flex flex-col justify-center gap-4 p-6">
+    <div class="flex flex-col">
       <p
         class="self-center text-3xl tracking-wide sm:text-4xl"
         style="font-variant: small-caps;"
       >
         welcome to the
       </p>
-      <img class="self-center drop-shadow-2xl" src="apotitle.png" />
+      <img
+        class="-mt-2 w-[32rem] max-w-full self-center drop-shadow-2xl"
+        src="apotitle.png"
+      />
     </div>
 
-    <div class="flex basis-96 flex-col gap-2">
+    <div class="flex max-w-lg flex-wrap justify-center gap-2 self-center">
       <div
         class="flex items-center gap-2 rounded-lg border-2 border-accent bg-primary-bg px-4 py-2"
       >
@@ -64,7 +67,9 @@
           >March 15-17th, 2024 <span class="text-purple-100">(tentative)</span></span
         >
       </div>
+    </div>
 
+    <div class="flex max-w-lg flex-col gap-2 self-center">
       <p class="mt-4 text-purple-100">Get notified when registrations open!</p>
       <form
         action="https://postal.hackclub.com/subscribe"
