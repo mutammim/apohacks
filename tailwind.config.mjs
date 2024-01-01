@@ -16,6 +16,8 @@ export default {
       },
       fontFamily: {
         sans: ["IBM Plex Sans", ...defaultTheme.fontFamily.sans],
+        title: ["VT323", ...defaultTheme.fontFamily.mono],
+        mono: ["IBM Plex Mono", ...defaultTheme.fontFamily.mono],
       },
       screens: {
         xs: "320px",
