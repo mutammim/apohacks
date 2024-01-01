@@ -1,4 +1,4 @@
-<header class="flex flex-col items-center text-white lg:h-screen">
+<header class="flex flex-col items-center text-white">
   <!-- --------------------------------- Top --------------------------------- -->
 
   <nav class="flex h-24 items-center justify-start">
@@ -10,26 +10,23 @@
 
   <div class="flex max-w-2xl flex-1 flex-col px-6 py-12 lg:px-0">
     <h1
-      class="font-title text-4xl leading-[0.9] text-purple-200 lg:text-5xl lg:leading-[0.85]"
+      class="font-title w-[35ch] text-2xl leading-[0.9] text-purple-50 lg:text-3xl lg:leading-[0.85]"
     >
-      Not your usual <span class="text-accent">high school hackathon.</span>
+      What if your ideas weren't restricted to the real world?
     </h1>
 
     <h1
-      class="font-title mt-4 text-4xl leading-[0.9] text-purple-200 lg:mt-6 lg:text-5xl lg:leading-[0.85]"
+      class="font-title mt-4 text-4xl leading-[0.9] text-purple-50 lg:mt-6 lg:text-5xl lg:leading-[0.85]"
     >
-      Build fun tech to survive a (fictional) <span class="text-accent2"
-        >zombie apocalypse!</span
-      >
+      The <span class="text-accent">high school hackathon</span> where you build fun tech
+      to survive a <span class="text-accent2">zombie apocalypse!</span>
     </h1>
 
-    <!-- TODO: Work on vertical spacing around -->
+    <!-- TODO: Vertical spacing around here is a little funky! -->
 
     <p class="font-title mt-8 text-3xl lg:mt-10 lg:text-4xl">
       Toronto <span class="text-accent2">|</span> March 15–17, 2024
     </p>
-
-    <!-- TODO: Add label -->
 
     <p class="font-title mt-10 pl-6 text-xl text-purple-200 lg:mt-12 lg:text-2xl">
       Get notified when registrations open!
@@ -41,6 +38,7 @@
       class="mt-1 flex overflow-clip bg-[#280f61] shadow-[inset_5px_5px_#0c0726] lg:mt-2"
       id="email-form"
     >
+      <!-- Coloring for <form> was originally bg-dark-bg shadow-[inset_5px_5px_rgba(0,0,0,0.3)] -->
       <input
         class="font-title flex-1 bg-transparent py-4 pl-6 text-2xl placeholder-white placeholder-opacity-75 focus:outline-none lg:text-3xl"
         placeholder="you@example.com"
@@ -109,24 +107,23 @@
   <!-- --------------------------- Bottom graphic ---------------------------- -->
 
   <img
-    class="max-h-48 w-full rotate-180 object-cover object-bottom drop-shadow-lg"
-    src="/top.svg"
-    alt="Top Graphic"
+    class="w-full rotate-180 object-cover object-bottom drop-shadow-lg"
+    src="/skyline.svg"
+    alt="City skyline"
   />
 </header>
 
 <style>
   header {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"),
-      radial-gradient(#280f61 0%, #0c0726 70%);
+      radial-gradient(#5b21b6 0%, #28184d 70%);
   }
 
-  .highlight {
-    /* color: #ec168c; */
-    /* text-shadow:
-      0.075rem 0.05rem 0 #fdf238,
-      -0.075rem -0.05rem 0 #06aef0; */
-  }
+  /* Alternative gradients */
+
+  /* radial-gradient(#4a1b9d 0%, #1c1340 70%); */
+  /* radial-gradient(#39157f 0%, #120d33 70%); */
+  /* radial-gradient(#280f61 0%, #0c0726 70%); */
 </style>
 
 <script>
