@@ -1,32 +1,48 @@
-<header class="flex h-screen flex-col items-center text-white">
+<header class="flex flex-col items-center text-white lg:h-screen">
   <!-- --------------------------------- Top --------------------------------- -->
 
-  <nav class="flex h-24 items-center justify-center">
+  <nav class="flex h-24 items-center justify-start">
+    <!-- TODO: Move logo to start, add links at end -->
     <img class="w-48" src="apotitle.png" />
   </nav>
 
   <!-- -------------------------------- Main --------------------------------- -->
 
-  <div class="flex max-w-2xl flex-1 flex-col py-12">
-    <h1 class="font-title text-7xl leading-[0.9] text-purple-300">
-      The <span class="text-purple-50">high school hackathon</span> for surviving a <span
-        class="text-purple-50">zombie apocalypse.</span
+  <div class="flex max-w-2xl flex-1 flex-col px-6 py-12 lg:px-0">
+    <h1
+      class="font-title text-4xl leading-[0.9] text-purple-200 lg:text-5xl lg:leading-[0.85]"
+    >
+      Not your usual <span class="text-accent">high school hackathon.</span>
+    </h1>
+
+    <h1
+      class="font-title mt-4 text-4xl leading-[0.9] text-purple-200 lg:mt-6 lg:text-5xl lg:leading-[0.85]"
+    >
+      Build fun tech to survive a (fictional) <span class="text-accent2"
+        >zombie apocalypse!</span
       >
     </h1>
 
-    <p class="font-title mt-6 text-4xl">
-      Toronto <span class="text-purple-300">|</span> March 15-17, 2024
+    <!-- TODO: Work on vertical spacing around -->
+
+    <p class="font-title mt-8 text-3xl lg:mt-10 lg:text-4xl">
+      Toronto <span class="text-accent2">|</span> March 15–17, 2024
     </p>
 
+    <!-- TODO: Add label -->
+
+    <p class="font-title mt-10 pl-6 text-xl text-purple-200 lg:mt-12 lg:text-2xl">
+      Get notified when registrations open!
+    </p>
     <form
       action="https://postal.hackclub.com/subscribe"
       method="POST"
       accept-charset="utf-8"
-      class="mt-12 flex overflow-clip bg-dark-bg shadow-[inset_5px_5px_rgba(0,0,0,0.3)]"
+      class="mt-1 flex overflow-clip bg-[#280f61] shadow-[inset_5px_5px_#0c0726] lg:mt-2"
       id="email-form"
     >
       <input
-        class="font-title flex-1 bg-transparent py-4 pl-6 text-3xl placeholder-white placeholder-opacity-75 focus:outline-none"
+        class="font-title flex-1 bg-transparent py-4 pl-6 text-2xl placeholder-white placeholder-opacity-75 focus:outline-none lg:text-3xl"
         placeholder="you@example.com"
         type="email"
         name="email"
@@ -55,37 +71,36 @@
           >
           </path>
         </svg>
+
         <svg
-          class="hidden h-4 w-4 animate-spin text-white sm:h-6 sm:w-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
           id="loading"
+          class="hidden h-8 w-8 animate-spin text-white"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.9999 2H10.9999V8H12.9999V2ZM12.9999 16H10.9999V22H12.9999V16ZM21.9998 11V13L15.9998 13V11H21.9998ZM7.99963 13V11H1.99963V13L7.99963 13ZM14.9996 6.99997H16.9996V8.99997H14.9996V6.99997ZM18.9995 4.99997H16.9995V6.99997H18.9995V4.99997ZM8.99963 6.99997H6.99963V8.99997H8.99963V6.99997ZM4.99973 4.99997H6.99973V6.99997H4.99973V4.99997ZM14.9996 17H16.9995V18.9999H18.9995V16.9999H16.9996V15H14.9996V17ZM6.99963 16.9999V15H8.99963V17H6.99973V18.9999H4.99973V16.9999H6.99963Z"
+            fill="currentColor"></path></svg
         >
-          <circle
-            class="opacity-25"
-            cx="12"
-            cy="12"
-            r="10"
-            stroke="currentColor"
-            stroke-width="4"></circle>
-          <path
-            class="opacity-75"
-            fill="currentColor"
-            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-          ></path>
-        </svg>
+
         <svg
           id="done"
-          xmlns="http://www.w3.org/2000/svg"
+          class="hidden h-8 w-8 text-white"
+          width="24"
+          height="24"
           viewBox="0 0 24 24"
-          class="hidden h-6 w-6 fill-white"
-        >
-          <path
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
             fill-rule="evenodd"
-            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-            clip-rule="evenodd"></path>
-        </svg>
+            clip-rule="evenodd"
+            d="M4 4H20H22V6V14H20V6H4V18H12V20H4H2V18V6V4H4ZM8 8H6V10H8V12H10V14H14V12H16V10H18V8H16V10H14V12H10V10H8V8ZM14 18H16V20H14V18ZM18 20V22H16V20H18ZM20 18H18V20H20V18ZM20 18V16H22V18H20Z"
+            fill="currentColor"></path></svg
+        >
       </label>
       <input type="submit" name="submit" id="submit" value="" class="w-0" />
     </form>
@@ -103,7 +118,14 @@
 <style>
   header {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"),
-      linear-gradient(#5b21b6 0%, #28184d 100%);
+      radial-gradient(#280f61 0%, #0c0726 70%);
+  }
+
+  .highlight {
+    /* color: #ec168c; */
+    /* text-shadow:
+      0.075rem 0.05rem 0 #fdf238,
+      -0.075rem -0.05rem 0 #06aef0; */
   }
 </style>
 
