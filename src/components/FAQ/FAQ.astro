@@ -2,17 +2,15 @@
 import FAQCard from "./FAQCard.astro";
 ---
 
-<section
-  class="flex justify-center bg-black/40 px-8 py-3 shadow-[inset_0_16px_rgba(0,0,0,0.3)]"
->
-  <div class="flex max-w-[1000px] grow flex-col space-y-14 py-16 text-center text-2xl">
-    <div class="space-y-3">
+<section class="flex justify-center bg-black/40 shadow-[inset_0_16px_rgba(0,0,0,0.3)]">
+  <div class="flex max-w-5xl grow flex-col gap-12 px-4 py-24 text-center text-2xl">
+    <div>
       <p class="text-6xl drop-shadow-[0_0_8px_#FF5DA9]">FAQ</p>
       <p class="text-3xl drop-shadow-[0_0_4px_#FF5DA9]">
         You got questions? We got answers :D
       </p>
     </div>
-    <div class="grid grid-cols-1 gap-x-8 gap-y-6 md:grid-cols-2">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
       <FAQCard
         question="What is this?"
         answer="This is the website for Apocalypse, a weekend-long hackathon for high school students in the Greater Toronto Area. Come learn, build, and share your best zombie-fighting tech!"
