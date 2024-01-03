@@ -2,13 +2,13 @@
 import FAQ from "../components/FAQ/FAQ.astro";
 import Hero from "../components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
-import Letter from "../components/Letter.astro";
+import Letter from "../components/Letter.svelte";
 ---
 
 <Layout title="Apocalypse: Hack your survival!">
   <Hero />
   <main>
-    <Letter />
+    <Letter client:load />
     <FAQ />
   </main>
 </Layout>
