@@ -41,7 +41,6 @@
   method="POST"
   accept-charset="utf-8"
   class={form_class}
-  id="email-form"
   on:submit|preventDefault={submitHandler}
 >
   <!-- Coloring for <form> was originally bg-dark-bg shadow-[inset_5px_5px_rgba(0,0,0,0.3)] -->
@@ -51,7 +50,6 @@
     placeholder="you@example.com"
     type="email"
     name="email"
-    id="email"
     required
     bind:value={email}
     on:keydown={() => {
@@ -62,13 +60,11 @@
   <input type="hidden" name="subform" value="yes" />
   <label
     for="submit"
-    id="email-button"
     class="group flex cursor-pointer items-center px-4 py-2 sm:px-7 sm:py-3"
   >
     {#if !loading && !success}
       <svg
         class="h-6 w-6 text-white motion-safe:transition-transform motion-safe:group-hover:translate-x-1 sm:h-8 sm:w-8"
-        id="todo"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -81,7 +77,6 @@
       </svg>
     {:else if loading}
       <svg
-        id="loading"
         class="h-6 w-6 animate-spin text-white sm:h-8 sm:w-8"
         width="24"
         height="24"
@@ -97,7 +92,6 @@
       >
     {:else if success}
       <svg
-        id="done"
         class="h-6 w-6 text-white sm:h-8 sm:w-8"
         width="24"
         height="24"
