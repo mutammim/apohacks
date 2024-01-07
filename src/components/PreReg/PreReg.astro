@@ -2,10 +2,10 @@
 import PreRegForm from "./PreRegForm.svelte";
 ---
 
-<section class="flex justify-center pb-20">
+<section class="flex justify-center pb-16 sm:pb-20 px-8">
     <div class="max-w-3xl w-full">
-        <h2 class="text-5xl drop-shadow-[0_0_6px_#FF5DA9]">Want to join?</h2>
-        <p class="text-3xl">Get notified when registrations open!</p>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl drop-shadow-[0_0_6px_#FF5DA9]">Want to join?</h2>
+        <p class="text-xl sm:text-2xl md:text-3xl">Get notified when registrations open!</p>
         <PreRegForm client:load form_class="mt-4 flex overflow-clip bg-black/40 lg:mt-6 border-2 border-accent2 shadow-[0_0_8px_#FF5DA9]"/>
     </div>
 </section>
