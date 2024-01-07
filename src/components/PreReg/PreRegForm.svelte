@@ -47,7 +47,7 @@
   <!-- Coloring for <form> was originally bg-dark-bg shadow-[inset_5px_5px_rgba(0,0,0,0.3)] -->
   <!-- Fix alignment for this text -->
   <input
-    class="flex-1 bg-transparent pl-4 -mt-1 mb-1 text-xl placeholder-white placeholder-opacity-75 focus:outline-none sm:pb-3 sm:pl-6 sm:pt-4 sm:text-2xl lg:text-3xl"
+    class="flex-1 bg-transparent pl-4 -mt-1 text-xl placeholder-white placeholder-opacity-75 focus:outline-none sm:pl-6 sm:text-2xl lg:text-3xl"
     placeholder="you@example.com"
     type="email"
     name="email"
