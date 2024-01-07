@@ -14,7 +14,7 @@ const eventDate = new Date("2024-03-15");
 <article class="flex justify-center px-8 py-16 sm:py-32">
   <section
     id="letter"
-    class="flex max-w-5xl grow flex-col space-y-6 border-2 border-accent bg-primary-bg px-6 py-8 text-sm shadow-[16px_16px_rgba(0,0,0,0.3)] sm:space-y-10 sm:px-12 sm:py-8 sm:text-lg md:px-16 md:py-12"
+    class="flex max-w-3xl grow flex-col space-y-6 border-2 border-accent bg-primary-bg px-6 py-8 text-sm shadow-[16px_16px_rgba(0,0,0,0.3)] sm:space-y-8 sm:px-12 sm:py-8 sm:text-lg md:px-16 md:py-12"
   >
     <!-- ----------------------------- Letterhead ------------------------------ -->
     <div class="text-right text-xl leading-5 md:text-2xl md:leading-6">
@@ -39,9 +39,11 @@ const eventDate = new Date("2024-03-15");
 
     <!-- --------------------------- Letter Contents --------------------------- -->
 
-    <div class="-mt-8 space-y-4 text-2xl leading-6 md:text-3xl md:leading-7">
+    <div
+      class="-mt-8 space-y-4 text-xl leading-6 sm:space-y-6 md:space-y-8 md:text-2xl md:leading-7"
+    >
       <p
-        class="text-3xl italic drop-shadow-[0_0_8px_#FF5DA9] sm:pt-4 sm:text-4xl md:text-5xl"
+        class="text-2xl italic drop-shadow-[0_0_8px_#FF5DA9] sm:pt-4 sm:text-3xl md:text-4xl"
       >
         Greetings, hacker.
       </p>
@@ -62,18 +64,16 @@ const eventDate = new Date("2024-03-15");
 
     <!-- ----------------------------- Letter CTA ------------------------------ -->
 
-    <div class="justify-center py-4 sm:py-8">
+    <div class="justify-center py-4 sm:py-6">
       <div
-        class="flex max-w-full grow flex-col gap-2 text-center text-white sm:gap-3 md:gap-4"
+        class="flex max-w-full grow flex-col gap-2 text-center text-2xl leading-6 text-white sm:gap-3 sm:text-3xl sm:leading-7 md:gap-4 md:text-4xl md:leading-9"
       >
-        <p class="text-3xl leading-6 sm:text-4xl sm:leading-7 md:text-5xl md:leading-9">
+        <p>
           Join <span class="text-accent">150 hackers</span> like you for
           <span class="text-accent2">42 hours</span> at our safehouse.
         </p>
 
-        <p
-          class="text-3xl leading-6 text-white drop-shadow-[0_0_4px_#FF5DA9] sm:text-4xl sm:leading-7 md:text-5xl md:leading-9"
-        >
+        <p class="drop-shadow-[0_0_4px_#FF5DA9]">
           Build something, <span class="italic">anything</span>, to help us survive this
           apocalypse.
         </p>
@@ -83,7 +83,7 @@ const eventDate = new Date("2024-03-15");
     <!-- <Projects client:load /> -->
 
     <div class="flex flex-col gap-4">
-      <p class="text-2xl leading-6 md:text-3xl md:leading-8">
+      <p class="text-xl leading-6 md:text-2xl md:leading-8">
         So, what will you make? We can't wait to meet you.
       </p>
 
