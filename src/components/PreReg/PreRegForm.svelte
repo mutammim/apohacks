@@ -54,6 +54,9 @@
     id="email"
     required
     bind:value={email}
+    on:keydown={() => {
+      success = false;
+    }}
   />
   <input type="hidden" name="list" value="YAbJpY892wYYel892gyGNghouQ" />
   <input type="hidden" name="subform" value="yes" />
