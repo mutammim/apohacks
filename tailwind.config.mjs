@@ -6,11 +6,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary-bg": "#401986",
-        "secondary-bg": "#80ABF4",
-        "dark-bg": "#28184d",
-        "light-bg": "#EDDAF8",
-        dark: "#A183B2",
+        "xlight-purple": "#E0AAFF", // "light-bg": "#EDDAF8",
+        "light-purple": "#9D4EDD", // "secondary-bg": "#80ABF4",
+        "regular-purple": "#5A189A", // "primary-bg": "#401986",
+        "dark-purple": "#3C096C", // "dark-bg": "#28184d",
+        "xdark-purple": "#240046",
+        "black-purple": "#10002B",
         accent: "#79E2F0",
         accent2: "#FF5DA9",
       },
