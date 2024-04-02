@@ -8,9 +8,7 @@ import svelte from "@astrojs/svelte";
 export default defineConfig({
   integrations: [tailwind(), svelte()],
   redirects: {
-    '/parents': '',
-    '/teachers': '',
-    '/travel': ''
+    '/': 'https://apocalypse.hackclub.com'
   },
   output: "server",
   adapter: vercel({
